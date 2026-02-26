@@ -1,11 +1,126 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darul Elm Masjid</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  header {
+    background-color: #006241;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  nav {
+    background-color: #004f33;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  h2 {
+    color: #006241;
+    border-bottom: 2px solid #006241;
+    padding-bottom: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  .donate {
+    background-color: #e0f2e9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .contact {
+    margin-top: 25px;
+    line-height: 1.6;
+  }
+  footer {
+    background-color: #004f33;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
+<header>
+  <h1>Darul Elm Masjid</h1>
+  <p>Birmingham, UK</p>
+</header>
 
-<Layout>
-	<Welcome />
-</Layout>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Prayer Times</a>
+  <a href="#">Donate</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <section>
+    <h2>Prayer Times</h2>
+    <table>
+      <tr><th>Prayer</th><th>Begins</th><th>Jama'ah</th></tr>
+      <tr><td>Fajr</td><td>5:30 AM</td><td>6:00 AM</td></tr>
+      <tr><td>Dhuhr</td><td>12:45 PM</td><td>1:30 PM</td></tr>
+      <tr><td>Asr</td><td>4:30 PM</td><td>5:00 PM</td></tr>
+      <tr><td>Maghrib</td><td>6:40 PM</td><td>6:45 PM</td></tr>
+      <tr><td>Isha</td><td>8:00 PM</td><td>8:15 PM</td></tr>
+    </table>
+  </section>
+
+  <section class="donate">
+    <h2>Donate</h2>
+    <p>Support the masjid and community projects.</p>
+    <p><strong>Bank:</strong> NatWest</p>
+    <p><strong>Account No:</strong> 89813006</p>
+    <p><strong>Sort Code:</strong> 51-70-32</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Darul Elm Masjid, Birmingham, UK</p>
+    <p><strong>Mobile:</strong> +44 7999 882272</p>
+    <p><strong>Office:</strong> +44 121 582 4577</p>
+    <p><strong>Email:</strong> info@darulelmmasjid.org</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Darul Elm Masjid | All Rights Reserved
+</footer>
+
+</body>
+</
