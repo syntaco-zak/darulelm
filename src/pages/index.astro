@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Darul Elm Masjid</title>
 <style>
+  html {
+    scroll-behavior: smooth; 
+  }
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,12 +21,15 @@
     padding: 20px;
   }
   nav {
-    background-color: #004f33;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-  }
+  background-color: #004f33;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  position: sticky;     
+  top: 0;               
+  z-index: 1000;        
+}
   nav a {
     color: white;
     text-decoration: none;
@@ -78,18 +84,23 @@
 
 <header>
   <h1>Darul Elm Masjid</h1>
-  <p>Birmingham, UK</p>
+  <p>115 Soho Hill, B19 1AY, Birmingham, UK</p>
 </header>
 
 <nav>
-  <a href="#">Home</a>
+  <a href="#home">Home</a>
   <a href="/timetable.pdf">Prayer Times</a>
-  <a href="#">Donate</a>
-  <a href="#">Contact</a>
+  <a href="#donate">Donate</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <main>
-  <section>
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to Darul Elm Masjid. Use the navigation above to explore the page or scroll down.</p>
+  </section>
+
+  <section id="prayer-times">
     <h2>Prayer Times</h2>
     <table>
       <tr><th>Prayer</th><th>Begins</th><th>Jama'ah</th></tr>
@@ -101,7 +112,7 @@
     </table>
   </section>
 
-  <section class="donate">
+  <section id="donate">
     <h2>Donate</h2>
     <p>Support the masjid and community projects.</p>
     <p><strong>Bank:</strong> NatWest</p>
@@ -109,7 +120,7 @@
     <p><strong>Sort Code:</strong> 51-70-32</p>
   </section>
 
-  <section class="contact">
+  <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> Darul Elm Masjid, Birmingham, UK</p>
     <p><strong>Mobile:</strong> +44 7999 882272</p>
@@ -123,4 +134,4 @@
 </footer>
 
 </body>
-</
+</html>
